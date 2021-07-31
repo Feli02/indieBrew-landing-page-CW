@@ -192,3 +192,23 @@ section#form-main {
         font-size: 1.7rem;
     }
 }
+
+@media screen and (min-width: 768px){
+    main{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    section#info-main {
+        width: 40%;
+    }
+    .button-back .icon-back {
+        width: 10%;
+    }
+    .logo {
+        width: 20%;
+    }
+    section#form-main {
+        margin-top: 0%;
+    }
+}
