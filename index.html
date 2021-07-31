@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Indie Brew</title>
+    <link rel="shortcut icon" href="./Assets/Indie Brew - Brave 31_7_2021 13_28_01.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/1046a69400.js" crossorigin="anonymous"></script>
+    <link href='https://css.gg/arrow-long-right.css' rel='stylesheet'>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div id="top-header">
+            <div id="container-logo-burger">
+                <img class="logo" src="./Assets/Logo.svg" alt="">
+                <button class="btn-burger-menu" id="btn-burger" onclick="displayBurger()"><input type="checkbox" class="input-checkbox" id="checkbox-input"><div class="bodymovinanim"></div></button>
+            </div>
+            <div id="nav-bar" class="main-nav">
+                <ul class="list-nav">
+                    <li class="list-item-nav"><a class="link-nav-bar" href="#">Pricing</a></li>
+                    <li class="list-item-nav"><a class="link-nav-bar" href="#">Support</a></li>
+                    <li class="list-item-nav" id="button-nav"><button id="btn1-signUp" class="btn-sign-up"><a class="link-toSignUp" href="signUp.html">Get Started - <span class="span-btn">it's free</span></a></button></li>
+                </ul>
+            </div>
+        </div>
+
+        <div id="bottom-header">
+            <div id="info">
+                <h1 class="main-title">Your weekly personal feed digest.</h1>
+                <p class="text-info">With IndieBrew, get personal feeds from resources all around the web, including Reddit, HackerNews, IndieHackers, and much more.</p>
+                <button class="btn-sign-up" id="btn-singUp2"><a class="link-toSignUp" href="signUp.html">Get Started - <span class="span-btn">it's free</span></a></button>
+                <img class="img-avatars" src="./Assets/User Avatars.svg" alt="">
+                <p class="extra-info">Join <span class="num-extra-info">32,642</span> IndieBrewers in curating their personal digest.</p>
+            </div>
+            <img class="img-feed" src="./Assets/Feed Mockup.png" alt="">
+        </div>
+    </header>
+
+    <main>
+        <div id="top-main">
+            <div class="left-main">
+                <h1 class="secondary-title">Curate your feed from dozens of resources.</h1>
+                <p class="secondary-info">We cover all major platforms where one could want to curate their feed from. Reddit, ProductHunt, IndieHackers, and much more.</p>
+                <a href="#" class="link-in-main">See full list of resources <i class="gg-arrow-long-right"></i></a>
+            </div>
+            <img class="img-social-media" src="./Assets/Social Media Icons.png" alt="">
+        </div>
+        <div id="bottom-main">
+            <img class="img-phone" src="./Assets/Phone Mockup.png" alt="">
+            <div class="right-main">
+                <h1 class="secondary-title">Access your feed from the comfort of your phone.</h1>
+                <p class="secondary-info">With native apps for both IOS and Android, accessing your curated content has never been easier.</p>
+                <a href="#" class="link-in-main">Sign Up for the wait list <i class="gg-arrow-long-right"></i></a>
+            </div>
+        </div>
+    </main>
+    <footer id="footer-home">
+        <div id="left-footer">
+            <h2 class="footer-title">IndieBrew</h2>
+            <p class="info-footer">With IndieBrew, get personal feeds from resources all around the web, including Reddit, HackerNews, and much more.</p>
+            <p class="made-with">Made with <i class="fas fa-heart"></i> in the UK.</p>
+        </div>
+        <div class="right-footer">
+            <ul id="main-list-footer">
+                <li class="main-list-item-footer">
+                    <h2 class="footer-title">Sitemap</h2>
+                    <ul class="inner-list">
+                        <li class="inner-list-item-footer"><a href="#" class="link-li-footer">Homepage</a></li>
+                        <li class="inner-list-item-footer"><a href="#" class="link-li-footer">Pricing</a></li>
+                    </ul>
+                </li>
+                <li class="main-list-item-footer go-to-right">
+                    <h2 class="footer-title">Resources</h2>
+                    <ul class="inner-list">
+                        <li class="inner-list-item-footer"><a href="#" class="link-li-footer">Support</a></li>
+                        <li class="inner-list-item-footer"><a href="#" class="link-li-footer">Contact</a></li>
+                        <li class="inner-list-item-footer"><a href="#" class="link-li-footer">FAQ</a></li>
+                    </ul>
+                </li>
+                <li class="main-list-item-footer">
+                    <h2 class="footer-title">Company</h2>
+                    <ul class="inner-list">
+                        <li class="inner-list-item-footer"><a href="#" class="link-li-footer">About</a></li>
+                        <li class="inner-list-item-footer"><a href="#" class="link-li-footer">Customers</a></li>
+                        <li class="inner-list-item-footer"><a href="#" class="link-li-footer">Blog</a></li>
+                    </ul>
+                </li>
+                <li class="main-list-item-footer go-to-right">
+                    <h2 class="footer-title">Portfolios</h2>
+                    <ul class="inner-list">
+                        <li class="inner-list-item-footer"><a href="#" class="link-li-footer">HackerNews</a></li>
+                        <li class="inner-list-item-footer"><a href="#" class="link-li-footer">Reddit</a></li>
+                        <li class="inner-list-item-footer"><a href="#" class="link-li-footer">Twitter</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </footer>
+</body>
+<script src="./js/burger.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.5.3/lottie_svg.min.js"></script>
+<script src="./js/lottie.js"> </script>
+</html>

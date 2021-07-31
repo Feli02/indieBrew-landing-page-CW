@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up - IndieBrew</title>
+    <link rel="shortcut icon" href="./Assets/Indie Brew - Brave 31_7_2021 13_28_01.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/1046a69400.js" crossorigin="anonymous"></script>
+    <link href='https://css.gg/arrow-long-right.css' rel='stylesheet'>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styleSignUp.css">
+</head>
+<body id="main-body">
+    <header id="header">
+        <img class="logo" src="./Assets/Logo.svg" alt="">
+        <div id="back-container">
+            <button class="button-back"><a id="linktohome" href="index.html"><img class="icon-back" src="./Assets/Back Arrow.svg" alt=""><span class="back-p">Back to homepage</span></a></button>
+        </div>
+    </header>
+    <main>
+        <section id="info-main">
+            <h1 id="title-sp">Create your personalized feed</h1>
+            <div class="p-container">
+                <img class="icon-p" src="./Assets/globo.svg" alt="">
+                <p class="text-info-sp">
+                    <span class="innerTitle-p">Over 20 resources.</span>
+                    With resources ranging from Reddit to IndieHackers, we´ve got all your needs covered.
+                </p>
+            </div>
+            <div class="p-container">
+                <img class="icon-p" src="./Assets/newspaper.svg" alt="">
+                <p class="text-info-sp">
+                    <span class="innerTitle-p">Delivered weekly.</span>
+                    Every week at exactly Tuesday 12:00 P.M EST - expect a value-packed digest right in your email.
+                </p>
+            </div>
+            <div class="p-container">
+                <img class="icon-p" src="./Assets/idea-lamp.svg" alt="">
+                <p class="text-info-sp">
+                    <span class="innerTitle-p">Unlimited ideas.</span>
+                    With all the ideas you´ll be reading about, what´s stopping you from creating a sustainable startup?
+                </p>
+            </div>
+        </section>
+        <section id="form-main">
+            <form action="" id="form"> 
+                <h2 id="title-form-sp">Create your IndieBrew Account</h2>
+
+                <div id="input-email-container" class="input-container">
+                    <label for="email" class="label-signUp">Email</label>
+                    <input type="email" name="email" id="email" class="input-signUp" placeholder="john@example.com">
+                    <img class="icon-error" id="icon-error-email" src="./Assets/icon-error.svg" alt="">
+                    <p id="error-txt-email" class="error-txt">Please enter a valid email address</p>
+                </div>
+
+                <div id="input-fullName-container" class="input-container">
+                    <label for="fullName" class="label-signUp">Full Name</label>
+                    <input type="text" name="fullName" id="fullName" class="input-signUp" placeholder="John Doe">
+                    <img class="icon-error" id="icon-error-fullName" src="./Assets/icon-error.svg" alt="">
+                    <p id="error-txt-fullName" class="error-txt">Please enter a valid Full Name</p>
+                </div>
+
+                <div id="input-password-container" class="input-container">
+                    <label for="password" class="label-signUp">Password</label>
+                    <input type="password" name="password" id="password" class="input-signUp" placeholder="At least 8 characters">
+                    <img class="icon-error" id="icon-error-password" src="./Assets/icon-error.svg" alt="">
+                    <p id="error-txt-password" class="error-txt">Password must contain at least 8 characters</p>
+                </div>
+
+                <div id="input-checkbox-container" class="input-container">
+                    <input type="checkbox" name="checkbox" id="checkbox">
+                    <label for="checkbox" id="label-checkbox">By creating an account on IndieBrew, you agree to the <a href="#" class="linkToTermsCond">Terms & Conditions</a>.</label>
+                    <p id="error-txt-checkbox" class="error-txt">You must agree Terms & Conditions</p>
+                </div>
+
+                <button type="submit" id="btn-submit">Create an Account</button>
+            </form>
+        </section>
+    </main>
+</body>
+<script src="./js/validations.js"></script>
+</html>
